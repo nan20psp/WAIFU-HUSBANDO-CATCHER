@@ -36,7 +36,7 @@ RUN sed -i 's/http:\/\/deb.debian.org/http:\/\/archive.debian.org/g' /etc/apt/so
 RUN python3 -m pip install --upgrade pip setuptools wheel
 
 # Clone repository and set working directory
-RUN git clone https://github.com/Mynameishekhar/ptb /app
+COPY . /app/
 WORKDIR /app
 
 # Install Python requirements
