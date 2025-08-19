@@ -1,6 +1,4 @@
-FROM python:3.11-slim-buster
-
-ENV PIP_NO_CACHE_DIR 1
+FROM nikolaik/python-nodejs:python3.11-nodejs24
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends ffmpeg \
@@ -10,9 +8,7 @@ RUN apt-get update \
 COPY . /app/
 WORKDIR /app/
 RUN python3 -m pip install --upgrade pip setuptools
-RUN pip3 install -U -r requirements.txt
-
-ENV PATH="/home/bot/bin:$PATH"
+RUN pip3 install --no-cache-dir --upgrade --requirement requirements.txt
 
 # Starting Worker
 CMD ["python3","-m", "shivu"]
