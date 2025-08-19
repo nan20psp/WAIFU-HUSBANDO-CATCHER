@@ -11,6 +11,10 @@ services:
         value: "29758428"
       - key: api_hash
         value: "51f9369e03f78674ca21aee8dfd1c842"
+      - key: GROUP_ID
+        value: "-1002356385851"
+      - key: OWNER_ID
+        value: "1318826936"
       - key: TOKEN
         value: "8345134806:AAGc_ygSXBH2rZz7omtpjytraXj_Yyrbr-s"
       - key: mongo_url
