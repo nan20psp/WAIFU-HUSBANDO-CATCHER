@@ -15,8 +15,6 @@ services:
         value: "8345134806:AAGc_ygSXBH2rZz7omtpjytraXj_Yyrbr-s"
       - key: mongo_url
         value: "mongodb+srv://wanglin:wanglin@wanglin.ppt93bd.mongodb.net/?retryWrites=true&w=majority"
-     # - key: GROUP_ID
-       # value: "-1002356385851"
       - key: sudo_users
         value: "5821905026", "1318826936"
       - key: UPDATE_CHAT
